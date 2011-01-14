@@ -9,10 +9,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.networklocation=1 \
     ro.setupwizard.enable_bypass=1
 
-# Get a proper init file
-#PRODUCT_COPY_FILES += \
-#    device/nvidia/harmony/init.vega.rc:root/init.vega.rc
-
 # Place permission files
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \

@@ -1,9 +1,6 @@
 USE_CAMERA_STUB := true
 BOARD_USE_FROYO_LIBCAMERA := true
 
-# temp fix 
-
-
 # inherit from the proprietary version
 -include vendor/advent/vega/BoardConfigVendor.mk
 
