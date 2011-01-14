@@ -4,10 +4,7 @@ PRODUCT_NAME := full_vega
 PRODUCT_DEVICE := vega
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapsize=64m \
-    ro.com.google.locationfeatures=1 \
-    ro.com.google.networklocation=1 \
-    ro.setupwizard.enable_bypass=1
+    dalvik.vm.heapsize=64m 
 
 # Place permission files
 PRODUCT_COPY_FILES += \
