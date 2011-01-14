@@ -1,0 +1,19 @@
+# mount point	fstype		device			[device2]
+
+/boot		mtd		boot
+/cache		yaffs2		/dev/block/mtdblock4
+/data		yaffs2		/dev/block/mtdblock6
+/recovery	mtd		/dev/block/mtdblock1
+/sdcard		vfat		/dev/block/mmcblk3p1	/dev/block/mmcblk3
+/system		yaffs2		/dev/block/mtdblock3
+
+###################################################
+#	dev:    size   erasesize  name
+#	mtd0: 00200000 00020000 "misc"
+#	mtd1: 00500000 00020000 "recovery"
+#	mtd2: 00800000 00020000 "boot"
+#	mtd3: 077a0000 00020000 "system"
+#	mtd4: 02000000 00020000 "cache"
+#	mtd5: 00400000 00020000 "staging"
+#	mtd6: 14b40000 00020000 "userdata"
+###################################################
