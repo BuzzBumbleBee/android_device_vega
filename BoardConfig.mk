@@ -35,14 +35,14 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
 #Audio Stuff
-BOARD_USES_GENERIC_AUDIO := false
-BOARD_PREBUILT_LIBAUDIO := true
+BOARD_USES_GENERIC_AUDIO := true
+#BOARD_PREBUILT_LIBAUDIO := true
 USE_KINETO_COMPATIBILITY := true
 
 
 BOARD_EGL_CFG := device/advent/vega/egl.cfg
 
-BOARD_NO_RGBX_8888 := true
+#BOARD_NO_RGBX_8888 := true
 
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
