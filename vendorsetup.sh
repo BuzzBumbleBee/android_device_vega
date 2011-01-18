@@ -1,2 +1,1 @@
 add_lunch_combo full_vega-userdebug
-add_lunch_combo full_vega-eng
