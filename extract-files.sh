@@ -147,12 +147,6 @@ adb pull /system/etc/bluez/bluecore6.psr ../../../vendor/$VENDOR/$DEVICE/proprie
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_camera.so ../../../vendor/$VENDOR/$DEVICE/proprietar
 
-# Pull wifi files
-adb pull /system/lib/hw/wlan/athwlan.bin.z77 ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/hw/wlan/data.patch.hw2_0.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/hw/wlan/eeprom.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/hw/wlan/eeprom.data ../../../vendor/$VENDOR/$DEVICE/proprietary
-
 # Pull recovery files
 adb pull /system/bin/recovery ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/recovery_2 ../../../vendor/$VENDOR/$DEVICE/proprietary
