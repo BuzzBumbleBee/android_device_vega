@@ -44,6 +44,9 @@ BOARD_EGL_CFG := device/advent/vega/egl.cfg
 
 #BOARD_NO_RGBX_8888 := true
 
+# Enables Old Sensor Compatibility
+TARGET_USES_OLD_LIBSENSORS_HAL:=true
+
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
 # mtd0: 00200000 00020000 "misc"
