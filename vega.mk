@@ -29,12 +29,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_LOCALES += mdpi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
-    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc
+    $(LOCAL_PATH)/init.vega.rc:root/init.vega.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/ar6000.ko:system/lib/hw/wlan/ar6000.ko
+    $(LOCAL_PATH)/wifi/ar6000.ko:system/lib/hw/wlan/ar6000.ko \
+    $(LOCAL_PATH)/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/wifi/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf \
+    $(LOCAL_PATH)/wifi/eeprom.data:system/lib/hw/wlan/eeprom.data \
+    $(LOCAL_PATH)/wifi/eeprom.bin:system/lib/hw/wlan/eeprom.bin \
+    $(LOCAL_PATH)/wifi/data.patch.hw2_0.bin:system/lib/hw/wlan/data.patch.hw2_0.bin \
+    $(LOCAL_PATH)/wifi/athwlan.bin.z77:system/lib/hw/wlan/athwlan.bin.z77
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/advent/vega/kernel/zImage

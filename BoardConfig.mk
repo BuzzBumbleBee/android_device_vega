@@ -1,3 +1,4 @@
+# Camera Setup
 USE_CAMERA_STUB := true
 BOARD_USE_FROYO_LIBCAMERA := true
 
@@ -30,7 +31,8 @@ WIFI_DRIVER_MODULE_NAME     := "ar6000"
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_CSR := true
 
-BOARD_KERNEL_CMDLINE :=
+# Boot.img setup
+BOARD_KERNEL_CMDLINE := androidboot.hardware=vega
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
@@ -66,4 +68,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_NO_MISC_PARTITION := true
 
 # The devices' prebuilt kernel
-TARGET_PREBUILT_KERNEL := device/advent/vega/kernel/kernel
+TARGET_PREBUILT_KERNEL := device/advent/vega/kernel/zImage
+
+# Maybe this will fix cache problem with vega
+BOARD_CACHE_DEVICE := /dev/block/mtdblock4
+BOARD_CACHE_FILESYSTEM := yaffs2

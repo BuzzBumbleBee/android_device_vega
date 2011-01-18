@@ -189,12 +189,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_camera.so:system/lib/libnvmm_camera.so
 
-# wifi files for  __DEVICE__
-PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/athwlan.bin.z77:system/lib/hw/wlan/athwlan.bin.z77 \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/data.patch.hw2_0.bin:system/lib/hw/wlan/data.patch.hw2_0.bin \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/eeprom.bin:system/lib/hw/wlan/eeprom.bin \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/eeprom.data:system/lib/hw/wlan/eeprom.data
 
 # recovery files for __DEVICE__
 PRODUCT_COPY_FILES += \\
