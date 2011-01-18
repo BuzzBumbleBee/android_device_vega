@@ -32,7 +32,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_CSR := true
 
 # Boot.img setup
-BOARD_KERNEL_CMDLINE := androidboot.hardware=vega
+BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
@@ -44,10 +44,10 @@ BOARD_USE_KINETO_COMPATIBILITY := true
 
 BOARD_EGL_CFG := device/advent/vega/egl.cfg
 
-#BOARD_NO_RGBX_8888 := true
+# BOARD_NO_RGBX_8888 := true
 
 # Enables Old Sensor Compatibility
-TARGET_USES_OLD_LIBSENSORS_HAL:=true
+# TARGET_USES_OLD_LIBSENSORS_HAL:=true
 
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
@@ -69,7 +69,3 @@ BOARD_HAS_NO_MISC_PARTITION := true
 
 # The devices' prebuilt kernel
 TARGET_PREBUILT_KERNEL := device/advent/vega/kernel/zImage
-
-# Maybe this will fix cache problem with vega
-BOARD_CACHE_DEVICE := /dev/block/mtdblock4
-BOARD_CACHE_FILESYSTEM := yaffs2
