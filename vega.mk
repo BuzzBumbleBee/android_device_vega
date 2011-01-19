@@ -43,6 +43,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/init.rc:root/init.rc \
     $(LOCAL_PATH)/init:root/init \
+    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc \
+    $(LOCAL_PATH)/init:recovery/root/init \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_COPY_FILES += \
