@@ -134,7 +134,8 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/overlay.tegra.so:system/lib/hw/overlay.tegra.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lights.tegra.so:system/lib/hw/lights.tegra.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/sensors.default.so:system/lib/hw/sensors.tegra.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/sensors.default.so:system/lib/hw/sensors.tegra.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/sensors.default.so:system/lib/hw/sensors.default.so
 
 # Keychar files for __DEVICE__
 PRODUCT_COPY_FILES += \\
