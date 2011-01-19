@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.rc:root/init.rc \
     $(LOCAL_PATH)/init:root/init \
     $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc \
+    $(LOCAL_PATH)/init_recovery.rc:/recovery/root/init.rc \
     $(LOCAL_PATH)/init:recovery/root/init \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
 
