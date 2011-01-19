@@ -27,7 +27,10 @@ DEVICE_PACKAGE_OVERLAYS += device/advent/vega/overlay
 PRODUCT_PACKAGES += \
     librs_jni \
     overlay.default \
-    gralloc.default 
+    gralloc.default \
+    sensors.vega \
+    lights.vega 
+
 
 PRODUCT_LOCALES += mdpi
 
