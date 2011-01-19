@@ -20,6 +20,9 @@ TARGET_BOOTLOADER_BOARD_NAME := harmony
 # Modem
 TARGET_NO_RADIOIMAGE := true
 
+# Use Old Style USB Mounting Untill we get kernel source
+BOARD_USE_USB_MASS_STORAGE_SWITCH := true
+
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 WPA_SUPPLICANT_VERSION      := VER_0_6_X
@@ -38,15 +41,16 @@ BOARD_PAGE_SIZE := 0x00000800
 
 #Audio Stuff
 BOARD_USES_GENERIC_AUDIO := false
-BOARD_PREBUILT_LIBAUDIO := false
+BOARD_PREBUILT_LIBAUDIO := true
 BOARD_USE_KINETO_COMPATIBILITY := true
 
 
 BOARD_EGL_CFG := device/advent/vega/egl.cfg
 
+# Disabled untill tested properly
 # BOARD_NO_RGBX_8888 := true
 
-# Enables Old Sensor Compatibility
+# Enables Old Sensor Compatibility Seems To Cause CPU Lockup On Vega, New kernel may be required
 # TARGET_USES_OLD_LIBSENSORS_HAL:=true
 
 # fix this up by examining /proc/mtd on a running device

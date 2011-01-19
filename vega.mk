@@ -7,7 +7,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapsize=32m \
     ro.com.google.locationfeatures=1 \
     ro.com.google.networklocation=1 
-##    ro.setupwizard.enable_bypass=1
 
 # davik-cache to /data untill /cache can be fixed
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -34,7 +33,8 @@ PRODUCT_LOCALES += mdpi
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
-    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc \
+    $(LOCAL_PATH)/init.rc:root/init.rc \
+    $(LOCAL_PATH)/init:root/init \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_COPY_FILES += \
