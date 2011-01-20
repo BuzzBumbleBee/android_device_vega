@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     gralloc.default \
     gralloc.tegra \
     sensors.default \
-    sensors.tegra \
+    sensors.vega \
     lights.tegra 
 
 
