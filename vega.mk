@@ -41,11 +41,10 @@ PRODUCT_LOCALES += mdpi
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
-    $(LOCAL_PATH)/init.rc:root/init.rc \
-    $(LOCAL_PATH)/init:root/init \
-    $(LOCAL_PATH)/init_recovery.rc:root/init_recovery.rc \
-    $(LOCAL_PATH)/init_recovery.rc:/recovery/root/init.rc \
-    $(LOCAL_PATH)/init:recovery/root/init \
+    $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
+    $(LOCAL_PATH)/ramdisk/init:root/init \
+    $(LOCAL_PATH)/ramdisk/init_recovery.rc:root/init_recovery.rc \
+    $(LOCAL_PATH)/ramdisk/initlogo.rle:root/initlogo.rle \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_COPY_FILES += \
