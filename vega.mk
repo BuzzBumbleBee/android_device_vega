@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/data.patch.hw2_0.bin:system/lib/hw/wlan/data.patch.hw2_0.bin \
     $(LOCAL_PATH)/wifi/athwlan.bin.z77:system/lib/hw/wlan/athwlan.bin.z77
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/kernel/cifs.ko:system/lib/modules/cifs.ko
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/advent/vega/kernel/zImage
 else
