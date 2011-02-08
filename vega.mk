@@ -44,8 +44,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
     $(LOCAL_PATH)/ramdisk/init:root/init \
     $(LOCAL_PATH)/ramdisk/init_recovery.rc:root/init_recovery.rc \
+    $(LOCAL_PATH)/ramdisk/default.prop:root/default.prop\
     $(LOCAL_PATH)/ramdisk/initlogo.rle:root/initlogo.rle \
     $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+
+
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/ar6000.ko:system/lib/hw/wlan/ar6000.ko \
