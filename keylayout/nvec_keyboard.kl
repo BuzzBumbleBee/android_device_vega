@@ -23,8 +23,6 @@ key 127   SEARCH            WAKE
 key 217   SEARCH            WAKE
 key 228   POUND             WAKE
 key 227   STAR              WAKE
-key 231   CALL              WAKE
-key 61    CALL              WAKE
 key 232   DPAD_CENTER       WAKE
 key 108   DPAD_DOWN         WAKE
 key 103   DPAD_UP           WAKE
