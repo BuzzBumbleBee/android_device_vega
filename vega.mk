@@ -3,8 +3,6 @@ $(call inherit-product, build/target/product/full.mk)
 PRODUCT_NAME := full_vega
 PRODUCT_DEVICE := vega
 
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
-
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapsize=32m \
     ro.com.google.locationfeatures=1 \
@@ -16,7 +14,7 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
     frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    frameworks/base/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
@@ -32,8 +30,7 @@ PRODUCT_PACKAGES += \
     gralloc.tegra \
     gralloc.tegra \
     sensors.tegra \
-    lights.tegra \
-    gps.vega 
+    lights.tegra 
 
 
 PRODUCT_LOCALES += mdpi
