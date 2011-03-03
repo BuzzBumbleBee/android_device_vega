@@ -146,7 +146,7 @@ adb pull /system/etc/bluez/bluecore6.psr ../../../vendor/$VENDOR/$DEVICE/proprie
 
 # Pull camera files
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libnvmm_camera.so ../../../vendor/$VENDOR/$DEVICE/proprietar
+adb pull /system/lib/libnvmm_camera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull recovery files
 adb pull /system/bin/recovery ../../../vendor/$VENDOR/$DEVICE/proprietary
